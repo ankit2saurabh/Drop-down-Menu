@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav Bar</title>
+  <style>
+    body{
+      background-color: red;
+    }
+    /*CSS for Main Navigation*/
+    .main_nav{
+      display: flex;
+      font-size: 22px;
+      float: right;
+      background-color: black;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    /*CSS for Main Navigation a tag*/
+    .main_nav a{
+      text-decoration: none;
+      color: white;
+      margin: 5px;
+      padding: 5px;
+      background: hotpink;
+    }
+    /*CSS for Main Navigation link to submenu height*/
+    .dropdown{
+      margin-top: 10.5px;
+    }
+    /*CSS for Main Navigation on hover*/
+    .main_nav a:hover{
+      background: rgb(38, 7, 122);
+      color: blue;
+    }
+    /*CSS for main_nav_child menas drop down menu CSS or sub menu CSS*/
+    .main_nav_child{
+      display: none;
+      margin-top: 10px;
+      position: absolute;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    }
+    /*CSS for main_nav_child menas drop down menu CSS or sub menu CSS to a tag*/
+    .main_nav_child a{
+      text-decoration: none;
+      display: block;
+      margin-top: 5px;
+      margin: 5px;
+      background-color: inherit; /*You can also remove this as per your use*/
+    }
+    /*On hover Drop Down Menu Show CSS*/
+    .dropdown:hover .main_nav_child{
+      display: block;
+      transition-delay: 2s;
+    }
+    /*CSS For written content*/
+    .content{
+      padding-top: 100px;
+      margin-left: 50px;
+    }
+    .myname{
+      font-size: 4rem;
+      color: #fff;
+      font-family: monotype corsiva;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main_nav">
+    <a href="#">Content</a>
+    <div class="dropdown">
+      <a href="#">Content</a>
+      <div class="main_nav_child">
+        <a href="#">Content</a>
+        <a href="#">Content</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Content</a>
+      <div class="main_nav_child">
+        <a href="#">Content</a>
+        <a href="#">Content</a>
+      </div>
+    </div>
+    <a href="#">Content</a>
+    <a href="#">Content</a>
+  </div>
+  <div class="content">
+    <div class="myname">
+      <p>Designed By Ankit Saurbah using very very less CSS</p>
+      <h6 style="color:white;">You can cahnge Color as per you want...</h6>
+    </div>
+  </div>
+</body>
+</html>
